@@ -7,12 +7,6 @@ public class Marble : MonoBehaviour
     public float speed = 10f;
     public GameObject target;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -23,7 +17,7 @@ public class Marble : MonoBehaviour
             float move_speed = speed * Time.deltaTime;
             
             //WRITE CODE HERE 
-            transform.position = Vector3.MoveTowards(curr_pos, target_pos, move_speed);
+            
             //END OF CODE
 
         }

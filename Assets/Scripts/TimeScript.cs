@@ -14,7 +14,6 @@ public class TimeScript : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Escape))
         {
-            print("here");
             if(isPaused)
             {
                 ResumeGame();
@@ -28,7 +27,7 @@ public class TimeScript : MonoBehaviour
         if(Input.GetKeyDown("space"))
         {
             //START COROUTINE HERE
-            StartCoroutine(Loading());
+            
             //END OF CODE
         }
     }
@@ -36,8 +35,8 @@ public class TimeScript : MonoBehaviour
     void PauseGame()
     {
         //WRITE CODE HERE
-        Time.timeScale = 0f;
-        isPaused = true;
+
+
         //END OF CODE
         pausedText.enabled = true;
         pausedText.gameObject.SetActive(true);
@@ -46,8 +45,8 @@ public class TimeScript : MonoBehaviour
     void ResumeGame()
     {
         //WRITE CODE HERE
-        Time.timeScale = 1f;
-        isPaused = false;
+        
+
         //END OF CODE
         pausedText.gameObject.SetActive(false);
         pausedText.enabled = false;
@@ -55,11 +54,6 @@ public class TimeScript : MonoBehaviour
     }
 
     //CREATE COROUTINE HERE
-    IEnumerator Loading()
-    {
-        loadingText.text = "This text will go away in 3 seconds";
-        yield return new WaitForSeconds(3f);
-        loadingText.text = "End of Coroutine";
-    }
+    
     //END OF CODE
 }

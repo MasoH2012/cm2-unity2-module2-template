@@ -6,8 +6,8 @@ public class Clamp : MonoBehaviour
 {
     public float min = -10f;
     public float max = 10f;
-    private float newMin = -5f;
-    private float newMax = 5f;
+    // private float newMin = -5f;
+    // private float newMax = 5f;
     static float t = 0.0f;
     // Start is called before the first frame update
     void Start()

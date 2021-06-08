@@ -14,8 +14,6 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        //rb.AddForce(new Vector3(50, 500, 50));
-
     }
 
     // Update is called once per frame
@@ -28,10 +26,6 @@ public class PlayerController : MonoBehaviour
 
         time += Time.deltaTime;
 
-        // if (Input.GetKeyDown(KeyCode.Mouse0))
-        // {
-        //     speed += 10;
-        // }
     }
 
     void DisplayTime(float timeDisplayed)
@@ -46,24 +40,11 @@ public class PlayerController : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    //Create OnCollisionExit function below 
-    void OnCollisionExit(Collision other)
-    {
-        if (other.collider.CompareTag("Floor"))
-        {
-            RestartLevel();
-        }
-    }
+    //Create OnCollisionExit function below
 
 
     //Create OnCollisionStay function below 
-    void OnCollisionStay(Collision other)
-    {
-        if (other.collider.CompareTag("Floor"))
-        {
-            DisplayTime(time);
-        }
-    }
+    
 
     //END OF CODE
 
