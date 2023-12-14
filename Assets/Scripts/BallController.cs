@@ -7,37 +7,25 @@ public class BallController : MonoBehaviour
 {
     public TMP_Text updateText;
     public TMP_Text fixedUpdateText;
-    //Declare and intialize updateCounter and fixedUpdateCounter here
-    
-    //Declare mr here
-    
+    // EXERCISE 2.4.1: Declare and intialize updateCounter, fixedUpdateCounter, and mr here
 
     // Start is called before the first frame update
     void Start()
     {
-        //Set mr to get MeshRenderer component here
-        
+        // EXERCISE 2.4.2: Set mr to get MeshRenderer component here
     }
 
     // Update is called once per frame
     void Update(){
-        //disable MeshRenderer component below
+        // EXERCISE 2.4.2: Disable MeshRenderer component
         
-        //increment updateCounter by 1 below
+        // EXERCISE 2.4.3: Increment updateCounter by 1
         
-        //END OF CODE
-        
-        //Uncomment line below when update function is completed
+        // EXERCISE 2.4.3: Uncomment this once completed.
         //updateText.text = "Update Counter: " + updateCounter.ToString();
-        
     }
     
-    //Create FixedUpdate function below
-    void FixedUpdate()
-    {
-        //increment fixedUpdateCounter by 1 and update fixedUpdateText below
-
-        
-        //END OF CODE
-    }
+    // EXERCISE 2.4.3 Create FixedUpdate function below.
+    // Increment fixedUpdateCounter by 1.
+    // update fixedUpdateText to say "Fixed Update Counter: " + fixedUpdateCounter.ToString()
 }

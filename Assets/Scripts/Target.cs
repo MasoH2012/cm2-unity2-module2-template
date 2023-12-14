@@ -10,6 +10,6 @@ public class Target : MonoBehaviour
         transform.Rotate(new Vector3(1, 1, 0));
     }
 
-    //Create OnTriggerEnter function here
+    // EXERCISE 2.7.1: Create OnTriggerEnter function here
     
 }

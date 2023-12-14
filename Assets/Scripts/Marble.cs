@@ -16,10 +16,7 @@ public class Marble : MonoBehaviour
             Vector3 target_pos = target.transform.position;
             float move_speed = speed * Time.deltaTime;
             
-            //WRITE CODE HERE 
-            
-            //END OF CODE
-
+            // EXERCISE 2.8.1: Write code below.
         }
     }
 }

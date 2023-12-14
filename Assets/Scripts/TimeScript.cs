@@ -26,34 +26,26 @@ public class TimeScript : MonoBehaviour
         }
         if(Input.GetKeyDown("space"))
         {
-            //START COROUTINE HERE
-            
-            //END OF CODE
+            // EXERCISE 2.9.2: Start coroutine.
         }
     }
 
     void PauseGame()
     {
-        //WRITE CODE HERE
+        // EXERCISE 2.9.1: Write code below.
 
-
-        //END OF CODE
         pausedText.enabled = true;
         pausedText.gameObject.SetActive(true);
     }
     
     void ResumeGame()
     {
-        //WRITE CODE HERE
-        
+        // EXERCISE 2.9.1: Write code below.
 
-        //END OF CODE
         pausedText.gameObject.SetActive(false);
         pausedText.enabled = false;
         
     }
 
-    //CREATE COROUTINE HERE
-    
-    //END OF CODE
+    // EXERCISE 2.9.2: Write coroutine below.
 }

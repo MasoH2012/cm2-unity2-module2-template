@@ -7,12 +7,11 @@ public class movingTarget : MonoBehaviour
     private float randX;
     private float randY;
     private float randZ;
+
     // Start is called before the first frame update
     void Start()
     {
-        //WRITE CODE HERE
-        
-        //END OF CODE
+        // EXERCISE 2.8.2: Write code below.
 
         transform.position = new Vector3(randX, randY, randZ);
 

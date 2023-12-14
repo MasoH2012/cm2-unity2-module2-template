@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody rb;
     public TMP_Text timeText;
     private float time = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -40,12 +41,7 @@ public class PlayerController : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    //Create OnCollisionExit function below
+    // EXERCISE 2.7.2: Create OnCollisionExit function below
 
-
-    //Create OnCollisionStay function below 
-    
-
-    //END OF CODE
-
+    // EXERCISE 2.7.3: Create OnCollisionStay function below 
 }
