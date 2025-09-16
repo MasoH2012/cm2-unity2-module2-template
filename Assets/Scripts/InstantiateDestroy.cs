@@ -4,19 +4,16 @@ using UnityEngine;
 
 public class InstantiateDestroy : MonoBehaviour
 {
-    // EXERCISE 2.5.1: Create variables below 
+    public GameObject prefab;
+    public float delayDestroy = 0.5f;
 
     // Update is called once per frame
     void Update()
     {
-        // EXERCISE 2.5.2: Finish code below
-        /*
-        if (LEFT MOUSE CLICKED)
+        if (Input.GetMouseButtonDown(0))
         {
-            CREATE CLONE OF PREFAB
-            DESTROY IN DELAYDESTROY SECONDS
+            GameObject clone = Instantiate(prefab);
+            Destroy(clone, delayDestroy);
         }
-        */
-        //END OF CODE
     }
 }

@@ -41,7 +41,15 @@ public class PlayerController : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    // EXERCISE 2.7.2: Create OnCollisionExit function below
+    public void OnCollisionExit(Collision other) {
+	if (other.collider.CompareTag("Floor")) {
+	    RestartLevel();
+	}
+    }
 
-    // EXERCISE 2.7.3: Create OnCollisionStay function below 
+    public void OnCollisionStay(Collision other) {
+	if (other.collider.CompareTag("Floor")) {
+	    DisplayTime(time);
+	}
+    }
 }

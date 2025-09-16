@@ -16,7 +16,7 @@ public class Marble : MonoBehaviour
             Vector3 target_pos = target.transform.position;
             float move_speed = speed * Time.deltaTime;
             
-            // EXERCISE 2.8.1: Write code below.
+            transform.position = Vector3.MoveTowards(curr_pos, target_pos, move_speed);
         }
     }
 }
